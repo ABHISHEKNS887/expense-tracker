@@ -38,10 +38,12 @@ app.use('/api/v1/admin/users/', userRouter);
 // import router
 import clientRouter from "./routes/client/users.router.js";
 import expenseRouter from "./routes/client/expenses.router.js";
+import dashBoardRouter from "./routes/client/dashBoard.router.js";
 
 //router declarations
 app.use('/api/v1/client/', clientRouter);
 app.use('/api/v1/expense/', expenseRouter);
+app.use('/api/v1/dashboard/', dashBoardRouter);
 
 // -------------------------------- Client Routes --------------------------------
 export { app }
